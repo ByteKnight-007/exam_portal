@@ -1,0 +1,2 @@
+class RequestResponseLog < ApplicationRecord
+end

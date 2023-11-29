@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  phone_number: MyString
+  college: one
+  exam: one
+  start_time: 2023-11-29 18:55:26
+
+two:
+  first_name: MyString
+  last_name: MyString
+  phone_number: MyString
+  college: two
+  exam: two
+  start_time: 2023-11-29 18:55:26
