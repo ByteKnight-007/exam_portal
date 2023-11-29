@@ -1,6 +1,6 @@
 require "test_helper"
 
-class RequestResponseLogTest < ActiveSupport::TestCase
+class RequestLoggerTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_29_132526) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_29_150801) do
   create_table "colleges", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -32,6 +32,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_29_132526) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["college_id"], name: "index_exams_on_college_id"
+  end
+
+  create_table "request_loggers", force: :cascade do |t|
+    t.text "request_params"
+    t.text "response"
+    t.datetime "request_time"
+    t.integer "status_code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "request_response_logs", force: :cascade do |t|
