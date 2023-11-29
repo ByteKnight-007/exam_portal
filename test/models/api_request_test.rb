@@ -1,6 +1,6 @@
 require "test_helper"
 
-class RequestLoggerTest < ActiveSupport::TestCase
+class ApiRequestTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

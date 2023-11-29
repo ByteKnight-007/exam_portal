@@ -1,6 +1,6 @@
-class CreateRequestLoggers < ActiveRecord::Migration[7.0]
+class CreateApiRequests < ActiveRecord::Migration[7.0]
   def change
-    create_table :request_loggers do |t|
+    create_table :api_requests do |t|
       t.text :request_params
       t.text :response
       t.datetime :request_time
