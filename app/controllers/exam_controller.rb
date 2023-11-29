@@ -9,7 +9,7 @@ class ExamController < ApplicationController
     render json: result[:response], status: result[:status_code]
   end
 
-  
+
 
   private
 
@@ -30,7 +30,7 @@ class ExamController < ApplicationController
     user = build_user(user_params)
 
     if user.save 
-      return { response: { message: "Hi, #{user_params[:first_name].titleize}! All the best for the exam" }, status_code: 200 }
+      return { response: { message: "Hi, #{user_params[:first_name]}! All the best for the exam" }, status_code: 200 }
     else 
       return { response: { error: "Failed to enroll" }, status_code: 400 }
     end
@@ -58,7 +58,8 @@ class ExamController < ApplicationController
 
   def valid_params?(user_params)
     required_params = %i[first_name last_name phone_number college_id exam_id start_time]
-    user_params.slice(*required_params).values.all?(&:present?)
+
+    required_params.all? { |param| user_params.key?(param) }
   end
 
   def valid_start_time?(start_time, exam)
