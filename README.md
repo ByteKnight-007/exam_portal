@@ -1,24 +1,35 @@
-# README
+# Pre-requisites
+* Ruby 3.0.2
+* bundler
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Cloning Repository
+  git@github.com:hk-cogoport/exam_portal.git
 
-Things you may want to cover:
+# Ruby Setup
+  STEP 1: rvm install ruby-3.0.2
 
-* Ruby version
+  STEP 2: rvm list
 
-* System dependencies
+  STEP 3: rvm use ruby-3.0.2
 
-* Configuration
+  STEP 5: gem install rails:7.0.8
 
-* Database creation
 
-* Database initialization
+# Getting Started
+  STEP 6: bundle install
 
-* How to run the test suite
+  STEP 9: rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+  STEP 10: rails db:seed
 
-* Deployment instructions
+  STEP 11: rails s
 
-* ...
+# Making a request
+  {
+  "first_name": "Harshit",
+  "last_name": "kumar",
+  "phone_number": "7654874153",
+  "college_id": 1,
+  "exam_id": 1,
+  "start_time": "2023-11-29 19:51:55.518422518"
+}
