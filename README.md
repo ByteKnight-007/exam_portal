@@ -25,7 +25,10 @@
   STEP 11: rails s
 
 # Making a request
-  {
+
+  url = http://127.0.0.1:3000/enroll_candidate
+
+  request_params = {
   "first_name": "Harshit",
   "last_name": "kumar",
   "phone_number": "7654874153",
